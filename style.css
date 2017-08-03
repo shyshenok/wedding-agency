@@ -48,39 +48,36 @@ header {
       border: none; }
       header .navbar-default .navbar-header button .icon-bar {
         background-color: #fff; }
-    header .navbar-default .navbar-collapse {
-      padding: 0; }
-      @media (max-width: 767px) {
-        header .navbar-default .navbar-collapse {
-          width: 100%; } }
-      header .navbar-default .navbar-collapse .nav {
-        text-align: center; }
-        header .navbar-default .navbar-collapse .nav li a {
-          color: #fff;
-          -webkit-transition: 0.5s ease;
-          -moz-transition: 0.5s ease;
-          -ms-transition: 0.5s ease;
-          -o-transition: 0.5s ease;
-          transition: 0.5s ease; }
-          header .navbar-default .navbar-collapse .nav li a:hover {
-            color: #ae6779;
-            text-decoration: none; }
-        header .navbar-default .navbar-collapse .nav .active a {
-          background: transparent;
-          border: none; }
-          header .navbar-default .navbar-collapse .nav .active a:focus {
-            color: #ae6779; }
-      header .navbar-default .navbar-collapse .navbar-form .search-icon {
-        float: right; }
-        header .navbar-default .navbar-collapse .navbar-form .search-icon input[type=checkbox] {
-          display: none; }
-          header .navbar-default .navbar-collapse .navbar-form .search-icon input[type=checkbox]:checked .form-group input [type=text] {
-            width: 120px; }
-        header .navbar-default .navbar-collapse .navbar-form .search-icon i {
-          color: #fff;
-          padding: 4px;
-          margin: 4px;
-          cursor: pointer; }
+    @media (max-width: 767px) {
+      header .navbar-default .navbar-collapse {
+        width: 100%; } }
+    header .navbar-default .navbar-collapse .nav {
+      text-align: center; }
+      header .navbar-default .navbar-collapse .nav li a {
+        color: #fff;
+        -webkit-transition: 0.5s ease;
+        -moz-transition: 0.5s ease;
+        -ms-transition: 0.5s ease;
+        -o-transition: 0.5s ease;
+        transition: 0.5s ease; }
+        header .navbar-default .navbar-collapse .nav li a:hover {
+          color: #afa9bc;
+          text-decoration: none; }
+      header .navbar-default .navbar-collapse .nav .active a {
+        border: none;
+        background-color: #958ca6;
+        color: #fff; }
+    header .navbar-default .navbar-collapse .navbar-form .search-icon {
+      float: right; }
+      header .navbar-default .navbar-collapse .navbar-form .search-icon input[type=checkbox] {
+        display: none; }
+        header .navbar-default .navbar-collapse .navbar-form .search-icon input[type=checkbox]:checked .form-group input [type=text] {
+          width: 120px; }
+      header .navbar-default .navbar-collapse .navbar-form .search-icon i {
+        color: #fff;
+        padding: 4px;
+        margin: 4px;
+        cursor: pointer; }
 
 .parallax {
   background-image: url("image/parallax-bg.jpg");

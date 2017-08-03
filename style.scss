@@ -88,7 +88,7 @@ header {
       }
     }
     .navbar-collapse{
-      padding:0;
+      //padding: 0;
       @media (max-width: $xs-size) {
         width: 100%;
       }
@@ -99,18 +99,16 @@ header {
             color: $color-text-main;
             @include transition(.5s ease);
             &:hover {
-              color:$color-links;
+              color:lighten($background-header, 20%);
               text-decoration: none;
             }
           }
         }
         .active {
           a {
-            background: transparent;
             border: none;
-            &:focus {
-              color: $color-links;
-            }
+            background-color: lighten($background-header, 10%);
+            color: $color-text-main;
           }
 
         }
