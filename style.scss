@@ -274,6 +274,20 @@ header {
   .services-block {
     margin: 20px 0;
     text-align: center;
+    height: 330px;
+
+    .icon-container {
+      width: 150px;
+      height: 160px;
+      display: block;
+      margin: 0 auto;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+
     h4 {
       padding: 10px 0;
       a {
@@ -300,9 +314,7 @@ header {
     }
   }
   .half-background {
-    background: url("image/project1.jpg");
-    background-position: center;
-    background-size: cover;
+    background: url("image/project21.jpg");
     background-attachment: fixed;
     height: 300px;
     padding: 0;
@@ -684,6 +696,17 @@ footer {
   background-color: $color-about-us;
   padding: 40px 0;
   text-align: center;
+
+  .img-circle-container {
+    width: 150px;
+    height: 150px;
+    background-color: black;
+    border-radius: 50%;
+    overflow: hidden;
+    display: block;
+    margin: 0 auto;
+  }
+
   h2 {
     display: inline-block;
     @include before-line(60px, -10px, 36%);
