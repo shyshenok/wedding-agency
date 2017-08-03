@@ -33,63 +33,6 @@ html, body {
   min-height: 100%;
   height: 100%; }
 
-.top-info {
-  text-align: center;
-  line-height: 30px; }
-  .top-info .address-info {
-    color: #888888;
-    font-size: 18px;
-    padding: 0; }
-    .top-info .address-info div {
-      padding: 0;
-      margin-left: 4px; }
-      @media (min-width: 1200px) {
-        .top-info .address-info div {
-          margin: 0; } }
-    .top-info .address-info i {
-      color: #ae6779;
-      padding-right: 8px; }
-    .top-info .address-info a {
-      text-decoration: none;
-      color: #888888;
-      -webkit-transition: 0.5s ease;
-      -moz-transition: 0.5s ease;
-      -ms-transition: 0.5s ease;
-      -o-transition: 0.5s ease;
-      transition: 0.5s ease; }
-      .top-info .address-info a:hover {
-        color: #ae6779; }
-    @media (min-width: 992px) {
-      .top-info .address-info {
-        text-align: left; } }
-    @media (min-width: 1200px) {
-      .top-info .address-info {
-        font-size: 16px; } }
-  .top-info .share-links .icon a {
-    padding: 12px;
-    font-size: 18px;
-    text-decoration: none;
-    color: #888888;
-    -webkit-transition: 0.5s ease;
-    -moz-transition: 0.5s ease;
-    -ms-transition: 0.5s ease;
-    -o-transition: 0.5s ease;
-    transition: 0.5s ease;
-    cursor: pointer; }
-    .top-info .share-links .icon a:hover {
-      color: #ae6779;
-      text-decoration: none; }
-    @media (min-width: 992px) {
-      .top-info .share-links .icon a {
-        padding: 8px;
-        font-size: 16px; } }
-    @media (min-width: 1200px) {
-      .top-info .share-links .icon a {
-        font-size: 18px; } }
-  @media (min-width: 1200px) {
-    .top-info {
-      line-height: 50px; } }
-
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
   background-color: #ae6779; }
 
@@ -616,7 +559,7 @@ footer {
         transform: translateZ(80px);
         font-size: 31px;
         font-weight: 600;
-        background-color: rgba(153, 153, 153, 0.62);
+        background-color: rgba(177, 174, 198, 0.6);
         padding: 2px; } }
   @media (min-width: 1200px) {
     .projects-page figure:hover img {
@@ -638,7 +581,7 @@ footer {
       left: 12%;
       color: #fff;
       width: 80%;
-      background-color: rgba(141, 141, 140, 0.84);
+      background-color: rgba(177, 174, 198, 0.6);
       font-size: 12px;
       line-height: 20px;
       padding: 8px;

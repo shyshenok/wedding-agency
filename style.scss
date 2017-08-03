@@ -67,68 +67,6 @@ html, body {
   height: 100%;
 }
 
-.top-info {
-  text-align: center;
-  line-height: 30px;
-  .address-info {
-    color: $color-text-secondary;
-    font-size: 18px;
-    padding: 0;
-    div {
-      padding:0;
-      margin-left: 4px;
-      @media(min-width: $lg-size) {
-        margin:0;
-      }
-    }
-    i {
-      color: $color-links;
-      padding-right: 8px;
-    }
-    a {
-      text-decoration: none;
-      color: $color-text-secondary;
-      @include transition(.5s ease);
-      &:hover {
-        color: $color-links;
-      }
-    }
-    @media(min-width: $md-size) {
-      text-align: left;
-    }
-    @media(min-width: $lg-size) {
-      font-size: 16px;
-    }
-  }
-  .share-links {
-    .icon{
-      a {
-        padding: 12px;
-        font-size: 18px;
-        text-decoration: none;
-        color: $color-text-secondary;
-        @include transition(.5s ease);
-        cursor: pointer;
-        &:hover {
-          color:$color-links;
-          text-decoration: none;
-        }
-        @media(min-width: $md-size) {
-          padding: 8px;
-          font-size: 16px;
-        }
-        @media(min-width: $lg-size) {
-          font-size: 18px;
-        }
-      }
-
-    }
-  }
-  @media(min-width: $lg-size) {
-    line-height: 50px;
-  }
-}
-
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
   background-color: $color-links;
 }
@@ -615,7 +553,7 @@ footer {
           transform: translateZ(80px);
           font-size: 31px;
           font-weight: 600;
-          background-color: rgba(153, 153, 153, 0.62);
+          background-color: rgba(177, 174, 198, 0.6);
           padding: 2px;
         }
       }
@@ -648,7 +586,7 @@ footer {
             left: 12%;
             color: #fff;
             width: 80%;
-            background-color: rgba(141, 141, 140, 0.84);
+            background-color: rgba(177, 174, 198, 0.6);
             font-size: 12px;
             line-height: 20px;
             padding: 8px;
