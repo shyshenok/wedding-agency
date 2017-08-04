@@ -1,8 +1,8 @@
-$color-links: #ae6779;
+$color-links: #dcb4bd;
 $color-text-secondary: #888888;
-$background-header: #7a6f90;
+$background-header: #51648b;
 $color-text-main: #fff;
-$color-about-us: #f3e8ea;
+$color-about-us: #ecebf4;
 
 $xs-size: 767px;
 $sm-size: 768px;
@@ -801,13 +801,13 @@ footer {
       }
       .front {
         .overlay {
-          background-color: rgba(121, 94, 111, 0.5);
+          background-color: rgba(121, 94, 111, 0.35);
         }
       }
       .back {
         transform: rotateY( 180deg );
         .overlay {
-          background-color: rgba(121, 94, 111, 0.75)
+          background-color: rgba(121, 94, 111, 0.35)
         }
         .card-text {
           top: 0;
