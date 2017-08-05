@@ -87,7 +87,7 @@ header {
   position: relative;
   padding: 0;
   margin: 0;
-  min-height: 700px;
+  min-height: 760px;
   text-align: center;
   color: #fff;
   display: flex;
@@ -399,13 +399,28 @@ footer {
 
 /* Services */
 .about-services {
-  min-height: 100%; }
-  .about-services .services-block {
-    margin: 30px 0 80px;
-    padding: 30px 0; }
-    @media (min-width: 1200px) {
-      .about-services .services-block {
-        margin-top: 60px; } }
+  min-height: 100%;
+  padding: 0;
+  margin: 0; }
+  @media (min-width: 1200px) {
+    .about-services .services-block {
+      margin-top: 60px; } }
+  .about-services .services-image-half-block {
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    padding: 0; }
+  .about-services .background-1 {
+    background-image: url("image/ cake.jpg");
+    background-position: center center; }
+  .about-services .background-2 {
+    background-image: url("image/project11.jpg"); }
+  .about-services .background-3 {
+    background-image: url("image/bouquet5.jpg");
+    background-size: contain; }
+  .about-services .background-4 {
+    background-image: url("image/bouquet22.jpg"); }
   .about-services .services-image img {
     max-width: 100%; }
   .about-services .services-info h3 {

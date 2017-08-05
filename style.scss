@@ -147,7 +147,7 @@ header {
   position: relative;
   padding: 0;
   margin: 0;
-  min-height: 700px;
+  min-height: 760px;
   text-align: center;
   color: $color-text-main;
   display: flex;
@@ -430,14 +430,42 @@ footer {
 
 .about-services {
   min-height: 100%;
+  padding: 0;
+  margin: 0;
   .services-block {
-    margin: 30px 0 80px;
-    padding: 30px 0;
     @media (min-width: $lg-size) {
       margin-top: 60px;
     }
   }
+  
+  .services-image-half-block {
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    padding: 0;
+  }
+
+  .background-1 {
+    background-image: url("image/ cake.jpg");
+    background-position: center center;
+  }
+
+  .background-2 {
+    background-image: url("image/project11.jpg");
+  }
+
+  .background-3 {
+    background-image: url("image/bouquet5.jpg");
+    background-size: contain;
+  }
+
+  .background-4 {
+    background-image: url("image/bouquet22.jpg");
+  }
+
   .services-image {
+
     img {
       max-width: 100%;
     }
