@@ -503,10 +503,12 @@ footer {
 .projects-page {
   margin-top: 30px;
   text-align: center; }
-  .projects-page h2 {
+  .projects-page h3 {
     display: inline-block;
-    position: relative; }
-    .projects-page h2:before {
+    position: relative;
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px; }
+    .projects-page h3:before {
       content: "";
       width: 60px;
       height: 2px;
