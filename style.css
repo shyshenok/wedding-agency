@@ -29,7 +29,7 @@
   100% {
     opacity: 1; } }
 html, body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Comfortaa', cursive;
   min-height: 100%;
   height: 100%; }
 
@@ -52,7 +52,9 @@ header {
       header .navbar-default .navbar-collapse {
         width: 100%; } }
     header .navbar-default .navbar-collapse .nav {
-      text-align: center; }
+      text-align: center;
+      font-family: 'Dancing Script', cursive;
+      font-size: 20px; }
       header .navbar-default .navbar-collapse .nav li a {
         color: #fff;
         -webkit-transition: 0.5s ease;
@@ -61,7 +63,7 @@ header {
         -o-transition: 0.5s ease;
         transition: 0.5s ease; }
         header .navbar-default .navbar-collapse .nav li a:hover {
-          color: #8898ba;
+          color: #98a6c3;
           text-decoration: none; }
       header .navbar-default .navbar-collapse .nav .active a {
         border: none;
@@ -78,6 +80,12 @@ header {
         padding: 4px;
         margin: 4px;
         cursor: pointer; }
+    header .navbar-default .navbar-brand {
+      color: #fff;
+      font-family: 'Dancing Script', cursive;
+      font-size: 30px; }
+      header .navbar-default .navbar-brand:hover {
+        color: #98a6c3; }
 
 .parallax {
   background-image: url("image/parallax-bg.jpg");
@@ -94,8 +102,10 @@ header {
   align-items: center;
   justify-content: center; }
   .parallax .parallax-content {
-    margin-top: -100px;
-    line-height: 26px; }
+    line-height: 26px;
+    padding: 20px 30px;
+    background-color: rgba(81, 100, 139, 0.3);
+    border-radius: 8px; }
   .parallax .arrow {
     display: none; }
     @media (min-width: 992px) {
@@ -121,9 +131,14 @@ header {
           .parallax .arrow a:hover {
             color: #dcb4bd; } }
   .parallax h3 {
-    font-size: 27px;
-    font-weight: 600;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    font-size: 30px;
+    text-shadow: 1px 1px 2px #51648b; }
+  .parallax p {
+    text-shadow: 1px 3px 0px #51648b;
+    font-size: 16px; }
   .parallax .btn {
     background-color: #dcb4bd;
     color: #fff;
@@ -149,6 +164,8 @@ header {
     text-align: center;
     width: 80%;
     margin: 20px auto;
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
     position: relative; }
     .services h3:before {
       content: "";
@@ -184,7 +201,9 @@ header {
     .services .services-block h4 {
       padding: 10px 0; }
       .services .services-block h4 a {
-        color: #dcb4bd; }
+        color: #dcb4bd;
+        font-family: 'Dancing Script', cursive;
+        font-size: 24px; }
         .services .services-block h4 a:hover {
           color: #c58392; }
     .services .services-block p {
@@ -202,7 +221,8 @@ header {
   .about-us .half-background {
     background: url("image/project21.jpg");
     background-attachment: fixed;
-    height: 300px;
+    background-size: cover;
+    height: 480px;
     padding: 0; }
     @media (min-width: 992px) {
       .about-us .half-background {
@@ -213,7 +233,9 @@ header {
     margin-bottom: 100px; }
     .about-us .content-about-us h3 {
       margin: 10px 0 20px 0;
-      position: relative; }
+      position: relative;
+      font-family: 'Dancing Script', cursive;
+      font-size: 30px; }
       .about-us .content-about-us h3:before {
         content: "";
         width: 60px;
@@ -276,6 +298,9 @@ footer {
 
 .our-contacts {
   padding: 30px 10px; }
+  .our-contacts h3 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px; }
   .our-contacts .contact-info {
     margin: 30px 0;
     text-align: center;
@@ -409,8 +434,11 @@ footer {
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 400px;
+    height: 500px;
     padding: 0; }
+    @media (min-width: 950px) {
+      .about-services .services-image-half-block {
+        width: 50%; } }
   .about-services .background-1 {
     background-image: url("image/ cake.jpg");
     background-position: center center; }
@@ -423,38 +451,47 @@ footer {
     background-image: url("image/bouquet22.jpg"); }
   .about-services .services-image img {
     max-width: 100%; }
-  .about-services .services-info h3 {
-    text-transform: uppercase;
-    display: block;
-    position: relative;
-    margin-bottom: 25px; }
-    .about-services .services-info h3:before {
-      content: "";
-      width: 60px;
-      height: 2px;
-      background: #dcb4bd;
-      position: absolute;
-      bottom: -14px;
-      left: 0; }
-  .about-services .services-info p {
-    line-height: 26px;
-    color: #888888;
-    margin: 0 0 30px; }
-  .about-services .services-info a {
-    background-color: #dcb4bd;
-    color: #fff;
-    border-radius: 0;
-    padding: 14px 26px;
-    margin: 16px 0 0 0;
-    -webkit-transition: 0.5s ease;
-    -moz-transition: 0.5s ease;
-    -ms-transition: 0.5s ease;
-    -o-transition: 0.5s ease;
-    transition: 0.5s ease; }
-    .about-services .services-info a:hover {
-      background-color: #c58392;
-      text-decoration: none;
-      color: #fff; }
+  .about-services .services-info {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 30px 60px; }
+    .about-services .services-info h3 {
+      font-family: 'Dancing Script', cursive;
+      font-size: 30px;
+      text-transform: uppercase;
+      display: block;
+      position: relative;
+      margin-bottom: 25px; }
+      .about-services .services-info h3:before {
+        content: "";
+        width: 60px;
+        height: 2px;
+        background: #dcb4bd;
+        position: absolute;
+        bottom: -14px;
+        left: 0; }
+    .about-services .services-info p {
+      line-height: 26px;
+      color: #888888;
+      margin: 0 0 30px; }
+    .about-services .services-info a {
+      background-color: #dcb4bd;
+      color: #fff;
+      border-radius: 0;
+      padding: 14px 26px;
+      margin: 16px 0 0 0;
+      -webkit-transition: 0.5s ease;
+      -moz-transition: 0.5s ease;
+      -ms-transition: 0.5s ease;
+      -o-transition: 0.5s ease;
+      transition: 0.5s ease; }
+      .about-services .services-info a:hover {
+        background-color: #c58392;
+        text-decoration: none;
+        color: #fff; }
+    @media (min-width: 950px) {
+      .about-services .services-info {
+        width: 50%; } }
 
 .white {
   background-color: #fff; }
@@ -546,6 +583,7 @@ footer {
       .projects-page figure p {
         display: none; } }
   .projects-page figure figcaption h3 {
+    font-family: 'Dancing Script', cursive;
     display: inline-block;
     text-transform: uppercase;
     -webkit-transition: 0.5s ease;
@@ -613,9 +651,6 @@ footer {
       .about-us-page .services-block {
         padding: 0 24px; } }
     @media (min-width: 768px) {
-      .about-us-page .services-block {
-        text-align: left; } }
-    @media (min-width: 768px) {
       .about-us-page .services-block p {
         padding: 0 10px 0 0; } }
     .about-us-page .services-block div {
@@ -637,12 +672,14 @@ footer {
     overflow: hidden;
     display: block;
     margin: 0 auto; }
-  .about-team h2 {
+  .about-team h3 {
     display: inline-block;
     position: relative;
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
     margin: 30px 0;
     padding: 10px 0; }
-    .about-team h2:before {
+    .about-team h3:before {
       content: "";
       width: 60px;
       height: 2px;
@@ -684,6 +721,8 @@ footer {
   margin: 60px 0 70px;
   text-align: center; }
   .testimonials-content-wrapper .testimonials-header {
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
     display: inline-block;
     position: relative; }
     .testimonials-content-wrapper .testimonials-header:before {
@@ -786,7 +825,9 @@ footer {
           color: #fff;
           line-height: 26px; }
           .projects .card .content .front .card-text h4, .projects .card .content .back .card-text h4 {
-            font-weight: 600; }
+            font-weight: 600;
+            font-family: 'Dancing Script', cursive;
+            font-size: 30px; }
       .projects .card .content .front .overlay {
         background-color: rgba(121, 94, 111, 0.35); }
       .projects .card .content .back {
