@@ -1015,41 +1015,49 @@ footer {
     display: inline-block;
   }
 
-
-  figure {
+  .one-bouquet {
     position: relative;
+
     img {
       width: 100%;
       height: auto;
       @include transition(.3s ease);
       margin: 10px 0;
     }
-    .btn {
-      @include link-button($color-links, $color-text-main);
+
+    .buy-now {
+      position: absolute;
       @include transition(.3s ease);
       animation: fade 0.3s;
       display: none;
-    }
-    &:hover {
       .btn {
-         display: block;
-         position: absolute;
-         top: 45%;
-         left: 33%;
-       }
-      img {
+        @include link-button($color-links, $color-text-main);
+      }
+    }
+
+    &:hover {
+      .buy-now {
+        display: block;
+        top: 45%;
+        left: 40%;
         &:hover {
-          transform: scale(1.1);
-          backface-visibility: hidden;
-          overflow: hidden;
-          @include transition(.3s ease);
-          filter: blur(3px);
+          .btn {
+            img {
+              filter: blur(3px);
+            }
+          }
         }
+
+      }
+      img {
+        transform: scale(1.1);
+        backface-visibility: hidden;
+        overflow: hidden;
+        @include transition(.3s ease);
+        filter: blur(3px);
       }
     }
   }
-
-
 
   .bouquet {
     margin: 20px 0;

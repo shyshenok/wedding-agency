@@ -951,9 +951,9 @@ footer {
       position: absolute;
       bottom: -10px;
       left: 0; }
-  .bouquets-block figure {
+  .bouquets-block .one-bouquet {
     position: relative; }
-    .bouquets-block figure img {
+    .bouquets-block .one-bouquet img {
       width: 100%;
       height: auto;
       -webkit-transition: 0.3s ease;
@@ -962,10 +962,8 @@ footer {
       -o-transition: 0.3s ease;
       transition: 0.3s ease;
       margin: 10px 0; }
-    .bouquets-block figure .btn {
-      background-color: #dcb4bd;
-      color: #fff;
-      border-radius: 0;
+    .bouquets-block .one-bouquet .buy-now {
+      position: absolute;
       -webkit-transition: 0.3s ease;
       -moz-transition: 0.3s ease;
       -ms-transition: 0.3s ease;
@@ -973,16 +971,21 @@ footer {
       transition: 0.3s ease;
       animation: fade 0.3s;
       display: none; }
-      .bouquets-block figure .btn:hover {
-        background-color: #c58392;
-        text-decoration: none;
-        color: #fff; }
-    .bouquets-block figure:hover .btn {
+      .bouquets-block .one-bouquet .buy-now .btn {
+        background-color: #dcb4bd;
+        color: #fff;
+        border-radius: 0; }
+        .bouquets-block .one-bouquet .buy-now .btn:hover {
+          background-color: #c58392;
+          text-decoration: none;
+          color: #fff; }
+    .bouquets-block .one-bouquet:hover .buy-now {
       display: block;
-      position: absolute;
       top: 45%;
-      left: 33%; }
-    .bouquets-block figure:hover img:hover {
+      left: 40%; }
+      .bouquets-block .one-bouquet:hover .buy-now:hover .btn img {
+        filter: blur(3px); }
+    .bouquets-block .one-bouquet:hover img {
       transform: scale(1.1);
       backface-visibility: hidden;
       overflow: hidden;
