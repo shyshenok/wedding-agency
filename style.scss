@@ -1017,6 +1017,9 @@ footer {
 
   .one-bouquet {
     position: relative;
+    overflow: hidden;
+    backface-visibility: hidden;
+
 
     img {
       width: 100%;
@@ -1040,19 +1043,12 @@ footer {
         display: block;
         top: 45%;
         left: 40%;
-        &:hover {
-          .btn {
-            img {
-              filter: blur(3px);
-            }
-          }
-        }
-
       }
       img {
         transform: scale(1.1);
         backface-visibility: hidden;
         overflow: hidden;
+
         @include transition(.3s ease);
         filter: blur(3px);
       }
