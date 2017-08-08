@@ -88,7 +88,6 @@ header {
       }
     }
     .navbar-collapse{
-      //padding: 0;
       @media (max-width: $xs-size) {
         width: 100%;
       }
@@ -167,7 +166,7 @@ header {
   .parallax-content {
     line-height: 26px;
     padding: 20px 30px;
-    background-color: rgba(81, 100, 139, 0.3);
+    background-color: rgba(81, 100, 139, 0.5);
     border-radius: 8px;
   }
   .arrow {
@@ -278,16 +277,20 @@ header {
     background: url("image/project21.jpg");
     background-attachment: fixed;
     background-size: cover;
+    background-position: center center;
     height: 480px;
     padding: 0;
+    @media (min-width: 820px) {
+      width: 50%;
+      height: 548px;
+    };
     @media (min-width: $md-size) {
       height: 600px;
     }
   }
   .content-about-us {
-    padding: 10px 45px;
+    padding: 40px 45px;
     line-height: 20px;
-    margin-bottom: 100px;
     h3 {
       margin: 10px 0 20px 0;
       @include before-line(60px, -10px, 0);
@@ -301,6 +304,10 @@ header {
     p {
       color: $color-text-secondary;
     }
+
+    @media (min-width: 820px) {
+      width: 50%;
+    };
   }
 }
 
@@ -317,7 +324,7 @@ footer {
   background-color: $background-header;
   .footer-icon-links {
     text-align: center;
-    margin: 10px 0 20px;
+    margin: 20px 0;
     height: 80px;
     width: 100%;
     .copyright {
@@ -326,6 +333,13 @@ footer {
       @media (min-width: $sm-size) {
         float: left;
         text-align: left;
+      }
+      a {
+        color: $color-links;
+        &:hover {
+          border-bottom: 1px solid $color-links;
+          text-decoration: none;
+        }
       }
     }
     .icon {
@@ -373,7 +387,7 @@ footer {
     }
   }
   .contact-info-block {
-    margin: 0 10px 30px;
+    margin: 0 0 30px;
     .address {
       color: $color-text-secondary;
       font-size: 16px;
@@ -464,6 +478,17 @@ footer {
   min-height: 100%;
   padding: 0;
   margin: 0;
+
+  .services-row {
+    @media (max-width: 950px) {
+      display: flex;
+      flex-flow: column nowrap;
+    }
+    @media (min-width: 950px) {
+      display: unset;
+    }
+  }
+
   .services-block {
     @media (min-width: $lg-size) {
       margin-top: 60px;
@@ -477,26 +502,32 @@ footer {
     height: 500px;
     padding: 0;
     @media (min-width: 950px) {
-      width: 50%;
+      max-width: 50%;
     }
   }
 
   .background-1 {
     background-image: url("image/ cake.jpg");
     background-position: center center;
+    order: 1;
+
   }
 
   .background-2 {
     background-image: url("image/project11.jpg");
+    order: 1;
+
   }
 
   .background-3 {
-    background-image: url("image/bouquet5.jpg");
-    background-size: contain;
+    background-image: url("image/bouquet19.jpg");
+    order: 1;
   }
 
   .background-4 {
     background-image: url("image/bouquet22.jpg");
+    order: 1;
+
   }
 
   .services-image {
@@ -509,6 +540,7 @@ footer {
     display: flex;
     flex-flow: row wrap;
     padding: 30px 60px;
+    order: 2;
     h3 {
       font-family: 'Dancing Script', cursive;
       font-size: 30px;
@@ -529,7 +561,7 @@ footer {
       @include transition(0.5s ease);
     }
     @media (min-width: 950px) {
-      width: 50%;
+      max-width: 50%;
     }
   }
 }
@@ -967,6 +999,64 @@ footer {
       background-color: $color-text-main;
       color: $color-links;
     }
+  }
+}
+
+.bouquets-block {
+
+  text-align: center;
+
+  h3 {
+    @include before-line(60px, -10px, 0);
+    font-weight: 600;
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+    margin: 40px 0;
+    display: inline-block;
+  }
+
+
+  figure {
+    position: relative;
+    img {
+      width: 100%;
+      height: auto;
+      @include transition(.3s ease);
+      margin: 10px 0;
+    }
+    .btn {
+      @include link-button($color-links, $color-text-main);
+      @include transition(.3s ease);
+      animation: fade 0.3s;
+      display: none;
+    }
+    &:hover {
+      .btn {
+         display: block;
+         position: absolute;
+         top: 45%;
+         left: 33%;
+       }
+      img {
+        &:hover {
+          transform: scale(1.1);
+          backface-visibility: hidden;
+          overflow: hidden;
+          @include transition(.3s ease);
+          filter: blur(3px);
+        }
+      }
+    }
+  }
+
+
+
+  .bouquet {
+    margin: 20px 0;
+    padding: 0;
+    column-count: 4;
+    column-width: 200px;
+    column-gap: 20px;
   }
 }
 

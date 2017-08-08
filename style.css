@@ -104,7 +104,7 @@ header {
   .parallax .parallax-content {
     line-height: 26px;
     padding: 20px 30px;
-    background-color: rgba(81, 100, 139, 0.3);
+    background-color: rgba(81, 100, 139, 0.5);
     border-radius: 8px; }
   .parallax .arrow {
     display: none; }
@@ -222,15 +222,19 @@ header {
     background: url("image/project21.jpg");
     background-attachment: fixed;
     background-size: cover;
+    background-position: center center;
     height: 480px;
     padding: 0; }
+    @media (min-width: 820px) {
+      .about-us .half-background {
+        width: 50%;
+        height: 548px; } }
     @media (min-width: 992px) {
       .about-us .half-background {
         height: 600px; } }
   .about-us .content-about-us {
-    padding: 10px 45px;
-    line-height: 20px;
-    margin-bottom: 100px; }
+    padding: 40px 45px;
+    line-height: 20px; }
     .about-us .content-about-us h3 {
       margin: 10px 0 20px 0;
       position: relative;
@@ -249,6 +253,9 @@ header {
       margin: 24px 0; }
     .about-us .content-about-us p {
       color: #888888; }
+    @media (min-width: 820px) {
+      .about-us .content-about-us {
+        width: 50%; } }
 
 .wrapper {
   position: relative; }
@@ -262,7 +269,7 @@ footer {
   background-color: #51648b; }
   footer .footer-icon-links {
     text-align: center;
-    margin: 10px 0 20px;
+    margin: 20px 0;
     height: 80px;
     width: 100%; }
     footer .footer-icon-links .copyright {
@@ -272,6 +279,11 @@ footer {
         footer .footer-icon-links .copyright {
           float: left;
           text-align: left; } }
+      footer .footer-icon-links .copyright a {
+        color: #dcb4bd; }
+        footer .footer-icon-links .copyright a:hover {
+          border-bottom: 1px solid #dcb4bd;
+          text-decoration: none; }
     footer .footer-icon-links .icon {
       margin-top: 10px; }
       footer .footer-icon-links .icon a {
@@ -329,7 +341,7 @@ footer {
         margin-top: 20px;
         margin-bottom: 50px; } }
   .our-contacts .contact-info-block {
-    margin: 0 10px 30px; }
+    margin: 0 0 30px; }
     .our-contacts .contact-info-block .address {
       color: #888888;
       font-size: 16px; }
@@ -427,6 +439,13 @@ footer {
   min-height: 100%;
   padding: 0;
   margin: 0; }
+  @media (max-width: 950px) {
+    .about-services .services-row {
+      display: flex;
+      flex-flow: column nowrap; } }
+  @media (min-width: 950px) {
+    .about-services .services-row {
+      display: unset; } }
   @media (min-width: 1200px) {
     .about-services .services-block {
       margin-top: 60px; } }
@@ -438,23 +457,27 @@ footer {
     padding: 0; }
     @media (min-width: 950px) {
       .about-services .services-image-half-block {
-        width: 50%; } }
+        max-width: 50%; } }
   .about-services .background-1 {
     background-image: url("image/ cake.jpg");
-    background-position: center center; }
+    background-position: center center;
+    order: 1; }
   .about-services .background-2 {
-    background-image: url("image/project11.jpg"); }
+    background-image: url("image/project11.jpg");
+    order: 1; }
   .about-services .background-3 {
-    background-image: url("image/bouquet5.jpg");
-    background-size: contain; }
+    background-image: url("image/bouquet19.jpg");
+    order: 1; }
   .about-services .background-4 {
-    background-image: url("image/bouquet22.jpg"); }
+    background-image: url("image/bouquet22.jpg");
+    order: 1; }
   .about-services .services-image img {
     max-width: 100%; }
   .about-services .services-info {
     display: flex;
     flex-flow: row wrap;
-    padding: 30px 60px; }
+    padding: 30px 60px;
+    order: 2; }
     .about-services .services-info h3 {
       font-family: 'Dancing Script', cursive;
       font-size: 30px;
@@ -491,7 +514,7 @@ footer {
         color: #fff; }
     @media (min-width: 950px) {
       .about-services .services-info {
-        width: 50%; } }
+        max-width: 50%; } }
 
 .white {
   background-color: #fff; }
@@ -910,6 +933,71 @@ footer {
         text-decoration: none;
         background-color: #fff;
         color: #dcb4bd; } }
+
+.bouquets-block {
+  text-align: center; }
+  .bouquets-block h3 {
+    position: relative;
+    font-weight: 600;
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+    margin: 40px 0;
+    display: inline-block; }
+    .bouquets-block h3:before {
+      content: "";
+      width: 60px;
+      height: 2px;
+      background: #dcb4bd;
+      position: absolute;
+      bottom: -10px;
+      left: 0; }
+  .bouquets-block figure {
+    position: relative; }
+    .bouquets-block figure img {
+      width: 100%;
+      height: auto;
+      -webkit-transition: 0.3s ease;
+      -moz-transition: 0.3s ease;
+      -ms-transition: 0.3s ease;
+      -o-transition: 0.3s ease;
+      transition: 0.3s ease;
+      margin: 10px 0; }
+    .bouquets-block figure .btn {
+      background-color: #dcb4bd;
+      color: #fff;
+      border-radius: 0;
+      -webkit-transition: 0.3s ease;
+      -moz-transition: 0.3s ease;
+      -ms-transition: 0.3s ease;
+      -o-transition: 0.3s ease;
+      transition: 0.3s ease;
+      animation: fade 0.3s;
+      display: none; }
+      .bouquets-block figure .btn:hover {
+        background-color: #c58392;
+        text-decoration: none;
+        color: #fff; }
+    .bouquets-block figure:hover .btn {
+      display: block;
+      position: absolute;
+      top: 45%;
+      left: 33%; }
+    .bouquets-block figure:hover img:hover {
+      transform: scale(1.1);
+      backface-visibility: hidden;
+      overflow: hidden;
+      -webkit-transition: 0.3s ease;
+      -moz-transition: 0.3s ease;
+      -ms-transition: 0.3s ease;
+      -o-transition: 0.3s ease;
+      transition: 0.3s ease;
+      filter: blur(3px); }
+  .bouquets-block .bouquet {
+    margin: 20px 0;
+    padding: 0;
+    column-count: 4;
+    column-width: 200px;
+    column-gap: 20px; }
 
 .content-404 {
   display: flex;
