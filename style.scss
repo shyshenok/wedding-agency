@@ -483,9 +483,7 @@ footer {
     @media (max-width: 950px) {
       display: flex;
       flex-flow: column nowrap;
-    }
-    @media (min-width: 950px) {
-      display: unset;
+      align-items: center;
     }
   }
 
@@ -516,6 +514,9 @@ footer {
   .background-2 {
     background-image: url("image/project11.jpg");
     order: 1;
+    @media (min-width: 950px) {
+      order: 2;
+    }
 
   }
 
@@ -526,7 +527,9 @@ footer {
 
   .background-4 {
     background-image: url("image/bouquet22.jpg");
-    order: 1;
+    @media (min-width: 950px) {
+      order: 2;
+    }
 
   }
 

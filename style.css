@@ -442,10 +442,8 @@ footer {
   @media (max-width: 950px) {
     .about-services .services-row {
       display: flex;
-      flex-flow: column nowrap; } }
-  @media (min-width: 950px) {
-    .about-services .services-row {
-      display: unset; } }
+      flex-flow: column nowrap;
+      align-items: center; } }
   @media (min-width: 1200px) {
     .about-services .services-block {
       margin-top: 60px; } }
@@ -465,12 +463,17 @@ footer {
   .about-services .background-2 {
     background-image: url("image/project11.jpg");
     order: 1; }
+    @media (min-width: 950px) {
+      .about-services .background-2 {
+        order: 2; } }
   .about-services .background-3 {
     background-image: url("image/bouquet19.jpg");
     order: 1; }
   .about-services .background-4 {
-    background-image: url("image/bouquet22.jpg");
-    order: 1; }
+    background-image: url("image/bouquet22.jpg"); }
+    @media (min-width: 950px) {
+      .about-services .background-4 {
+        order: 2; } }
   .about-services .services-image img {
     max-width: 100%; }
   .about-services .services-info {
