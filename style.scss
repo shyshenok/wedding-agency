@@ -480,10 +480,10 @@ footer {
   margin: 0;
 
   .services-row {
+    display: flex;
+    align-items: center;
     @media (max-width: 950px) {
-      display: flex;
       flex-flow: column nowrap;
-      align-items: center;
     }
   }
 

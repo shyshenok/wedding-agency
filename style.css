@@ -439,11 +439,12 @@ footer {
   min-height: 100%;
   padding: 0;
   margin: 0; }
-  @media (max-width: 950px) {
-    .about-services .services-row {
-      display: flex;
-      flex-flow: column nowrap;
-      align-items: center; } }
+  .about-services .services-row {
+    display: flex;
+    align-items: center; }
+    @media (max-width: 950px) {
+      .about-services .services-row {
+        flex-flow: column nowrap; } }
   @media (min-width: 1200px) {
     .about-services .services-block {
       margin-top: 60px; } }
