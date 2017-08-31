@@ -231,25 +231,27 @@ header {
 
 .about-us {
   background-color: #ecebf4; }
-  @media (min-width: 992px) {
-    .about-us .about-us-row {
-      display: flex;
-      flex-flow: row;
-      align-items: center; } }
+  .about-us .about-us-row {
+    height: 480px; }
+    @media (min-width: 992px) {
+      .about-us .about-us-row {
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+        height: 600px; } }
+    @media (min-width: 820px) {
+      .about-us .about-us-row {
+        height: 548px; } }
   .about-us .half-background {
-    background: url("image/project21.jpg");
+    background: url("image/project33.jpg");
     background-attachment: fixed;
     background-size: cover;
     background-position: center center;
-    height: 480px;
+    height: 100%;
     padding: 0; }
     @media (min-width: 820px) {
       .about-us .half-background {
-        width: 50%;
-        height: 548px; } }
-    @media (min-width: 992px) {
-      .about-us .half-background {
-        height: 600px; } }
+        width: 50%; } }
   .about-us .content-about-us {
     padding: 40px 45px;
     line-height: 20px; }

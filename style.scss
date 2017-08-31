@@ -285,26 +285,27 @@ header {
 .about-us {
   background-color: $color-about-us;
   .about-us-row {
+    height: 480px;
     @media (min-width: $md-size) {
       display: flex;
       flex-flow: row;
       align-items: center;
+      height: 600px;
+    }
+    @media (min-width: 820px) {
+      height: 548px;
     }
   }
   .half-background {
-    background: url("image/project21.jpg");
+    background: url("image/project33.jpg");
     background-attachment: fixed;
     background-size: cover;
     background-position: center center;
-    height: 480px;
+    height:100%;
     padding: 0;
     @media (min-width: 820px) {
       width: 50%;
-      height: 548px;
     };
-    @media (min-width: $md-size) {
-      height: 600px;
-    }
   }
   .content-about-us {
     padding: 40px 45px;
