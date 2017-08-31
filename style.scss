@@ -157,17 +157,26 @@ header {
   position: relative;
   padding: 0;
   margin: 0;
-  min-height: 760px;
+  min-height: 580px;
   text-align: center;
   color: $color-text-main;
   display: flex;
   align-items: center;
   justify-content: center;
+  @media (min-width: $sm-size) {
+    min-height: 628px;
+  }
+  @media (min-width: $md-size) {
+    min-height: 760px;
+  }
   .parallax-content {
     line-height: 26px;
     padding: 20px 30px;
     background-color: rgba(81, 100, 139, 0.5);
     border-radius: 8px;
+    @media (min-width: $md-size) {
+      padding: 60px;
+    }
   }
   .arrow {
     display: none;
@@ -189,16 +198,24 @@ header {
     }
   }
   h3 {
-    text-transform: uppercase;
     font-family: 'Dancing Script', cursive;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 32px;
+    line-height: 40px;
+    margin: 10px 0;
     text-shadow: 1px 1px 2px $background-header;
+    @media (min-width: $md-size) {
+      padding: 10px 20px;
+      font-size: 40px;
+    }
   }
 
   p {
-    text-shadow: 1px 3px 0px $background-header;
+    text-shadow: 1px 3px 0 $background-header;
     font-size: 16px;
+    @media (min-width: $md-size) {
+      padding: 10px 20px;
+    }
   }
 
   .btn {

@@ -95,17 +95,26 @@ header {
   position: relative;
   padding: 0;
   margin: 0;
-  min-height: 760px;
+  min-height: 580px;
   text-align: center;
   color: #fff;
   display: flex;
   align-items: center;
   justify-content: center; }
+  @media (min-width: 768px) {
+    .parallax {
+      min-height: 628px; } }
+  @media (min-width: 992px) {
+    .parallax {
+      min-height: 760px; } }
   .parallax .parallax-content {
     line-height: 26px;
     padding: 20px 30px;
     background-color: rgba(81, 100, 139, 0.5);
     border-radius: 8px; }
+    @media (min-width: 992px) {
+      .parallax .parallax-content {
+        padding: 60px; } }
   .parallax .arrow {
     display: none; }
     @media (min-width: 992px) {
@@ -131,14 +140,22 @@ header {
           .parallax .arrow a:hover {
             color: #dcb4bd; } }
   .parallax h3 {
-    text-transform: uppercase;
     font-family: 'Dancing Script', cursive;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 32px;
+    line-height: 40px;
+    margin: 10px 0;
     text-shadow: 1px 1px 2px #51648b; }
+    @media (min-width: 992px) {
+      .parallax h3 {
+        padding: 10px 20px;
+        font-size: 40px; } }
   .parallax p {
-    text-shadow: 1px 3px 0px #51648b;
+    text-shadow: 1px 3px 0 #51648b;
     font-size: 16px; }
+    @media (min-width: 992px) {
+      .parallax p {
+        padding: 10px 20px; } }
   .parallax .btn {
     background-color: #dcb4bd;
     color: #fff;
