@@ -637,6 +637,9 @@ footer {
 .projects-page {
   margin-top: 30px;
   text-align: center;
+  .row {
+    margin: 40px 0;
+  }
   h3 {
     display: inline-block;
     @include before-line(60px, -8px, 0);
@@ -646,7 +649,6 @@ footer {
 
   }
   .project-block {
-    margin: 20px 0 20px;
     padding: 30px 30px 40px;
     text-align: center;
   }
@@ -1093,7 +1095,8 @@ footer {
       margin: 10px 0;
     }
 
-    .buy-now {
+    .buy-now,
+    .short-bouquet-info {
       position: absolute;
       @include transition(.3s ease);
       animation: fade 0.3s;
@@ -1104,10 +1107,25 @@ footer {
     }
 
     &:hover {
+      .short-bouquet-info {
+        display: block;
+        top: 30%;
+        font-family: 'Dancing Script', cursive;
+        background-color: rgba(255, 255, 255, 0.7);
+        border-radius: 6px;
+        left: 13%;
+        font-size: 24px;
+        padding: 34px;
+        width: 75%;
+        color: $background-header;
+      }
       .buy-now {
         display: block;
-        top: 45%;
-        left: 40%;
+        bottom: 16%;
+        left: 35%;
+        .btn {
+          padding: 12px 26px;
+        }
       }
       img {
         transform: scale(1.1);

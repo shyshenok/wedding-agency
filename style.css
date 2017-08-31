@@ -572,6 +572,8 @@ footer {
 .projects-page {
   margin-top: 30px;
   text-align: center; }
+  .projects-page .row {
+    margin: 40px 0; }
   .projects-page h3 {
     display: inline-block;
     position: relative;
@@ -587,7 +589,6 @@ footer {
       bottom: -8px;
       left: 0; }
   .projects-page .project-block {
-    margin: 20px 0 20px;
     padding: 30px 30px 40px;
     text-align: center; }
   @media (min-width: 1200px) {
@@ -1014,7 +1015,8 @@ footer {
       -o-transition: 0.3s ease;
       transition: 0.3s ease;
       margin: 10px 0; }
-    .bouquets-block .one-bouquet .buy-now {
+    .bouquets-block .one-bouquet .buy-now,
+    .bouquets-block .one-bouquet .short-bouquet-info {
       position: absolute;
       -webkit-transition: 0.3s ease;
       -moz-transition: 0.3s ease;
@@ -1023,18 +1025,33 @@ footer {
       transition: 0.3s ease;
       animation: fade 0.3s;
       display: none; }
-      .bouquets-block .one-bouquet .buy-now .btn {
+      .bouquets-block .one-bouquet .buy-now .btn,
+      .bouquets-block .one-bouquet .short-bouquet-info .btn {
         background-color: #dcb4bd;
         color: #fff;
         border-radius: 0; }
-        .bouquets-block .one-bouquet .buy-now .btn:hover {
+        .bouquets-block .one-bouquet .buy-now .btn:hover,
+        .bouquets-block .one-bouquet .short-bouquet-info .btn:hover {
           background-color: #c58392;
           text-decoration: none;
           color: #fff; }
+    .bouquets-block .one-bouquet:hover .short-bouquet-info {
+      display: block;
+      top: 30%;
+      font-family: 'Dancing Script', cursive;
+      background-color: rgba(255, 255, 255, 0.7);
+      border-radius: 6px;
+      left: 13%;
+      font-size: 24px;
+      padding: 34px;
+      width: 75%;
+      color: #51648b; }
     .bouquets-block .one-bouquet:hover .buy-now {
       display: block;
-      top: 45%;
-      left: 40%; }
+      bottom: 16%;
+      left: 35%; }
+      .bouquets-block .one-bouquet:hover .buy-now .btn {
+        padding: 12px 26px; }
     .bouquets-block .one-bouquet:hover img {
       transform: scale(1.1);
       backface-visibility: hidden;
