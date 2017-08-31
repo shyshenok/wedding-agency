@@ -205,14 +205,28 @@ header {
           bottom: -10px;
           left: 40%; } }
   .services .services-block {
-    margin: 20px 0;
+    margin: 40px 0;
     text-align: center;
-    height: 330px; }
+    height: 460px; }
     .services .services-block .icon-container {
-      width: 150px;
-      height: 160px;
+      width: 300px;
+      height: 300px;
       display: block;
-      margin: 0 auto; }
+      margin: 0 auto;
+      border-radius: 50%;
+      background-image: url("image/icons.svg"); }
+    .services .services-block .background-icon-1 {
+      background-position: -28px -64px; }
+    .services .services-block .background-icon-2 {
+      background-position: -664px -64px; }
+    .services .services-block .background-icon-3 {
+      background-position: -376px -362px; }
+    .services .services-block .background-icon-4 {
+      background-position: -664px -352px; }
+    .services .services-block .background-icon-5 {
+      background-position: -664px -634px; }
+    .services .services-block .background-icon-6 {
+      background-position: -664px -634px; }
     .services .services-block img {
       width: 100%;
       height: 100%; }
@@ -893,7 +907,7 @@ footer {
       .projects .card .content .back {
         transform: rotateY(180deg); }
         .projects .card .content .back .overlay {
-          background-color: rgba(121, 94, 111, 0.35); }
+          background-color: rgba(121, 94, 111, 0.45); }
         .projects .card .content .back .card-text {
           top: 0;
           left: 0;
