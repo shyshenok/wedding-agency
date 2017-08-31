@@ -183,6 +183,7 @@ header {
     margin: 20px auto;
     font-family: 'Dancing Script', cursive;
     font-size: 30px;
+    color: #51648b;
     position: relative; }
     .services h3:before {
       content: "";
@@ -256,7 +257,8 @@ header {
       margin: 10px 0 20px 0;
       position: relative;
       font-family: 'Dancing Script', cursive;
-      font-size: 30px; }
+      font-size: 30px;
+      color: #51648b; }
       .about-us .content-about-us h3:before {
         content: "";
         width: 60px;
@@ -469,26 +471,29 @@ footer {
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 500px;
+    height: 600px;
     padding: 0; }
     @media (min-width: 950px) {
       .about-services .services-image-half-block {
-        max-width: 50%; } }
+        max-width: 50%;
+        width: 50%; } }
   .about-services .background-1 {
     background-image: url("image/ cake.jpg");
-    background-position: center center;
     order: 1; }
   .about-services .background-2 {
-    background-image: url("image/project11.jpg");
+    background-image: url("image/project26.jpeg");
+    background-position: center top;
     order: 1; }
     @media (min-width: 950px) {
       .about-services .background-2 {
         order: 2; } }
   .about-services .background-3 {
-    background-image: url("image/bouquet19.jpg");
+    background-image: url("image/bouquet5.jpg");
+    background-size: contain;
     order: 1; }
   .about-services .background-4 {
-    background-image: url("image/bouquet22.jpg"); }
+    background-image: url("image/project28.jpg");
+    background-position: center top; }
     @media (min-width: 950px) {
       .about-services .background-4 {
         order: 2; } }
@@ -504,6 +509,7 @@ footer {
       font-size: 30px;
       text-transform: uppercase;
       display: block;
+      color: #51648b;
       position: relative;
       margin-bottom: 25px; }
       .about-services .services-info h3:before {
@@ -515,9 +521,12 @@ footer {
         bottom: -14px;
         left: 0; }
     .about-services .services-info p {
-      line-height: 26px;
+      line-height: 24px;
       color: #888888;
-      margin: 0 0 30px; }
+      width: 100%; }
+    .about-services .services-info ul li {
+      color: #888888;
+      line-height: 22px; }
     .about-services .services-info a {
       background-color: #dcb4bd;
       color: #fff;
@@ -551,7 +560,8 @@ footer {
     display: inline-block;
     position: relative;
     font-family: 'Dancing Script', cursive;
-    font-size: 30px; }
+    font-size: 30px;
+    color: #51648b; }
     .projects-page h3:before {
       content: "";
       width: 60px;
@@ -724,7 +734,8 @@ footer {
     font-family: 'Dancing Script', cursive;
     font-size: 30px;
     margin: 30px 0;
-    padding: 10px 0; }
+    padding: 10px 0;
+    color: #51648b; }
     .about-team h3:before {
       content: "";
       width: 60px;
@@ -767,6 +778,7 @@ footer {
   margin: 60px 0 70px;
   text-align: center; }
   .testimonials-content-wrapper .testimonials-header {
+    color: #51648b;
     font-family: 'Dancing Script', cursive;
     font-size: 30px;
     display: inline-block;
@@ -963,7 +975,8 @@ footer {
     font-family: 'Dancing Script', cursive;
     font-size: 30px;
     margin: 40px 0;
-    display: inline-block; }
+    display: inline-block;
+    color: #51648b; }
     .bouquets-block h3:before {
       content: "";
       width: 60px;

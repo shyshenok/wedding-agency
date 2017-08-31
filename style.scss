@@ -240,6 +240,7 @@ header {
     margin: 20px auto;
     font-family: 'Dancing Script', cursive;
     font-size: 30px;
+    color: $background-header;
     @include before-line(60px, -10px, 40%);
     @media (min-width: $sm-size) {
       @include before-line(120px, -10px, 40%);
@@ -313,6 +314,7 @@ header {
       @include before-line(60px, -10px, 0);
       font-family: 'Dancing Script', cursive;
       font-size: 30px;
+      color: $background-header;
     }
     h4{
       line-height: 22px;
@@ -514,22 +516,23 @@ footer {
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 500px;
+    height: 600px;
     padding: 0;
     @media (min-width: 950px) {
       max-width: 50%;
+      width: 50%;
     }
   }
 
   .background-1 {
     background-image: url("image/ cake.jpg");
-    background-position: center center;
     order: 1;
 
   }
 
   .background-2 {
-    background-image: url("image/project11.jpg");
+    background-image: url("image/project26.jpeg");
+    background-position: center top;
     order: 1;
     @media (min-width: 950px) {
       order: 2;
@@ -538,12 +541,14 @@ footer {
   }
 
   .background-3 {
-    background-image: url("image/bouquet19.jpg");
+    background-image: url("image/bouquet5.jpg");
+    background-size: contain;
     order: 1;
   }
 
   .background-4 {
-    background-image: url("image/bouquet22.jpg");
+    background-image: url("image/project28.jpg");
+    background-position: center top;
     @media (min-width: 950px) {
       order: 2;
     }
@@ -566,13 +571,19 @@ footer {
       font-size: 30px;
       text-transform: uppercase;
       display: block;
+      color: $background-header;
       @include before-line(60px, -14px, 0);
       margin-bottom: 25px;
     }
-    p {
-      line-height: 26px;
+    p{
+      line-height: 24px;
       color: $color-text-secondary;
-      margin: 0 0 30px;
+      width: 100%;
+    }
+
+    ul li {
+      color: $color-text-secondary;
+      line-height: 22px;
     }
     a {
       @include link-button ($color-links, $color-text-main);
@@ -604,6 +615,8 @@ footer {
     @include before-line(60px, -8px, 0);
     font-family: 'Dancing Script', cursive;
     font-size: 30px;
+    color: $background-header;
+
   }
   .project-block {
     margin: 20px 0 20px;
@@ -773,6 +786,8 @@ footer {
     font-size: 30px;
     margin: 30px 0;
     padding: 10px 0;
+    color: $background-header;
+
   }
   .team-block {
     margin: 20px 0 30px;
@@ -808,6 +823,7 @@ footer {
   margin: 60px 0 70px;
   text-align: center;
   .testimonials-header {
+    color: $background-header;
     font-family: 'Dancing Script', cursive;
     font-size: 30px;
     display: inline-block;
@@ -1033,6 +1049,8 @@ footer {
     font-size: 30px;
     margin: 40px 0;
     display: inline-block;
+    color: $background-header;
+
   }
 
   .one-bouquet {
