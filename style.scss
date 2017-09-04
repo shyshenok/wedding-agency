@@ -283,7 +283,7 @@ header {
     }
 
     .background-icon-6 {
-      background-position: -664px -634px;
+      background-position: -396px -634px;
     }
 
     img {
@@ -509,7 +509,7 @@ footer {
         }
         @media (min-width: $md-size) {
           margin:10px 10px;
-          width: 25%;
+          width: 36%;
         }
       }
     }
@@ -559,7 +559,7 @@ footer {
   }
 
   .background-2 {
-    background-image: url("image/project26.jpeg");
+    background-image: url("image/project26.jpg");
     background-position: center top;
     order: 1;
     @media (min-width: 950px) {
@@ -570,8 +570,10 @@ footer {
 
   .background-3 {
     background-image: url("image/bouquet5.jpg");
-    background-size: contain;
     order: 1;
+    @media (min-width: 950px) {
+      background-size: contain;
+    }
   }
 
   .background-4 {
