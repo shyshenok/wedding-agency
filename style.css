@@ -795,8 +795,11 @@ footer {
 
 /* carousel */
 .testimonials-content-wrapper {
-  margin: 60px 0 70px;
+  margin: 350px 0 70px;
   text-align: center; }
+  @media (min-width: 768px) {
+    .testimonials-content-wrapper {
+      margin-top: 60px; } }
   .testimonials-content-wrapper .testimonials-header {
     color: #51648b;
     font-family: 'Dancing Script', cursive;

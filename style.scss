@@ -852,8 +852,12 @@ footer {
 
 /* carousel */
 .testimonials-content-wrapper {
-  margin: 60px 0 70px;
+
+  margin: 350px 0 70px;
   text-align: center;
+  @media (min-width: $sm-size) {
+    margin-top: 60px;
+  }
   .testimonials-header {
     color: $background-header;
     font-family: 'Dancing Script', cursive;
